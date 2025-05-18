@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&display=swap");
+
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+@theme {
+  --font-raleway: "Raleway", "sans-serif"; 
+  --font-rancho: "Rancho", "cursive"; 
+}
+
+.custom-bg {
+  background-image: url('./assets/icons/1.png'), url('./assets/icons/2.png');
+ background-repeat: no-repeat, no-repeat;
+  background-position: top, left bottom;
+  background-size: auto, auto;
+}
+/* body {
+  font-family: "Raleway", sans-serif;
+}
+h1, h2,h3{
+  font-family: "Rancho", cursive;
+} */
+
+
+/* Tag	Recommended Size	Tailwind Class	ভূমিকা
+h1	36–48px	text-4xl থেকে text-5xl	প্রধান শিরোনাম (পেজ/সেকশন টাইটেল)
+h2	30–36px	text-3xl থেকে text-4xl	সাব-হেডিং
+h3	24px	text-2xl	সাব-সেকশন টাইটেল
+h4	20px	text-xl	ছোট সাব-হেডিং
+h5	16–18px	text-lg বা text-base	আরো নিচু স্তরের হেডিং
+h6	14–16px	text-sm বা text-base	ছোট টেক্সটের হেডিং */
