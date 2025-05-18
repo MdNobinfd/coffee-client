@@ -10,7 +10,7 @@ const CoffeeUpdate = () => {
     const form = e.target;
     const formData = new FormData(form);
     const updatedCoffee = Object.fromEntries(formData.entries());
-    fetch(`https://coffee-server-j45m.vercel.app/coffees/${_id}`, {
+    fetch(`https://coffe-server-nine.vercel.app/coffees/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

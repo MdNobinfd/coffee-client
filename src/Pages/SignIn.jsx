@@ -1,8 +1,11 @@
-import React from "react";
+import React, { use } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router";
+import { AuthContext } from "../contexts/AuthContext";
 
 const SignIn = () => {
+  const usser = use(AuthContext)
+  console.log(usser)
   return (
     <section className="container mx-auto">
           <div className="my-[50px]">
