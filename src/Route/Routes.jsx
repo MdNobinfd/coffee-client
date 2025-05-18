@@ -14,7 +14,7 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch("https://coffee-server-pied.vercel.app/coffees"),
+        loader: () => fetch("https://coffee-server-j45m.vercel.app/coffees"),
         hydrateFallbackElement: <h1>this is loading</h1>,
         element: <HomePages />,
       },
@@ -25,14 +25,14 @@ export const router = createBrowserRouter([
       {
         path: "/coffeedetails/:id",
         loader: ({ params }) =>
-          fetch(`https://coffee-server-pied.vercel.app/coffees/${params.id}`),
+          fetch(`https://coffee-server-j45m.vercel.app/coffees/${params.id}`),
         hydrateFallbackElement: <h1>this is loading</h1>,
         element: <CoffeeDetails />,
       },
       {
         path: "/coffeeupdate/:id",
         loader: ({ params }) =>
-          fetch(`https://coffee-server-pied.vercel.app/coffees/${params.id}`),
+          fetch(`https://coffee-server-j45m.vercel.app/coffees/${params.id}`),
         hydrateFallbackElement: <h1>this is loading</h1>,
         element: <CoffeeUpdate />,
       },
